@@ -53,7 +53,11 @@ li(bindonce='list', id='task-{{::task.id}}', ng-repeat='task in obj[list.type+"s
         span.glyphicon.glyphicon-signal
         | &nbsp;
       // notes
+<<<<<<< HEAD
       span.task-notes(ng-show='task.notes && !task._editing', ng-click='task.popoverOpen = !task.popoverOpen', popover-trigger='click', data-popover-html="{{task.notes | markdown}}", popover-placement="top", popover-append-to-body='{{::modal ? "false":"true"}}')
+=======
+      span.task-notes(ng-show='task.notes && !task._editing', ng-click='task.popoverOpen = !task.popoverOpen' popover-trigger='click', data-popover-html="{{task.notes | markdown}}", popover-placement="top", popover-append-to-body='{{::modal ? "false":"true"}}')
+>>>>>>> 05dd3152f4a4fcd2125371fb08c8c6ca8b302a40
         span.glyphicon.glyphicon-comment
         | &nbsp;
 

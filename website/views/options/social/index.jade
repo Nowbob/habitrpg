@@ -125,6 +125,7 @@ script(type='text/ng-template', id='modals/copyChatToDo.html')
 
     hr
 
+<<<<<<< HEAD
     div.task-column.preview
       div(ng-init='popoverOpen = false', class='task todo uncompleted color-neutral', popover-trigger='mouseenter', data-popover-html="{{popoverOpen ? '' : notes | markdown}}", popover-placement="top")
         // right-hand side control buttons
@@ -139,6 +140,10 @@ script(type='text/ng-template', id='modals/copyChatToDo.html')
         // main content
         div.task-text
           markdown(text='text',target='_blank')
+=======
+    div(popover-trigger='click', data-popover-html="{{notes | markdown}}", popover-placement="top")
+      +previewMarkdown('text')
+>>>>>>> 05dd3152f4a4fcd2125371fb08c8c6ca8b302a40
 
   .modal-footer
     button.btn.btn-default(ng-click='$close()')=env.t('close')
